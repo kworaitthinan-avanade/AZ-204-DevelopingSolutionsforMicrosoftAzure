@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/webapp-lab15.csproj",
+                "${workspaceFolder}/webapp-lab14.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/webapp-lab15.csproj",
+                "${workspaceFolder}/webapp-lab14.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/webapp-lab15.csproj"
+                "${workspaceFolder}/webapp-lab14.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -44,14 +44,14 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "webapplab15:dev",
+                "tag": "webapplab14:dev",
                 "target": "base",
                 "dockerfile": "${workspaceFolder}/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/webapp-lab15.csproj"
+                "appProject": "${workspaceFolder}/webapp-lab14.csproj"
             }
         },
         {
@@ -61,7 +61,7 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "webapplab15:latest",
+                "tag": "webapplab14:latest",
                 "dockerfile": "${workspaceFolder}/Dockerfile",
                 "context": "${workspaceFolder}",
                 "platform": {
@@ -71,7 +71,7 @@
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/webapp-lab15.csproj"
+                "appProject": "${workspaceFolder}/webapp-lab14.csproj"
             }
         },
         {
@@ -84,7 +84,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/webapp-lab15.csproj",
+                "appProject": "${workspaceFolder}/webapp-lab14.csproj",
                 "enableDebugging": true
             }
         },
@@ -98,7 +98,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/webapp-lab15.csproj"
+                "appProject": "${workspaceFolder}/webapp-lab14.csproj"
             }
         }
     ]
